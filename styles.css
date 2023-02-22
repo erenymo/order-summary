@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bg_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    height: 400px;
+    z-index: -1;
+}
+
+.bg_image img {
+    width: 100%;
+}
+
+.card {
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 400px;
+}
+
+.image {
+    border-radius: 1rem;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.content {
+    margin: auto;
+    padding: 20px 40px 40px 40px;
+}
+
+.content h1 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: var(--desaturated-blue);
+    letter-spacing: 0.7px;
+}
+
+.purchase {
+    margin: 20px 0;
+    position: relative;
+    border-radius: 1rem;
+    padding: 20px;
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.purchase .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change {
+    position: absolute;
+    right: 30px;
+}
+
+.change a {
+   color: var(--bright-blue);
+}
+
+.change a:hover {
+    text-decoration: none;
+    color:hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel {
+    text-decoration: none; 
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.btn {
+    font-family: "Red Hat Display", sans-serif;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        margin:1rem;
+    }
+
+    .purchase {
+        font-size: small;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
